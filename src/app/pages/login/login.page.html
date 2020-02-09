@@ -1,0 +1,20 @@
+<ion-content color="principal">
+    <ion-grid class="mt-home" fixed>
+        <ion-row>
+
+            <ion-col offset="1" size="10">
+                <ion-item color="warning">
+                    <ion-input [(ngModel)]="usuario" class="txt-input" placeholder="correo"></ion-input>
+                </ion-item>
+            </ion-col>
+            <ion-col offset="1" size="10">
+                <ion-item color="warning">
+                    <ion-input [(ngModel)]="password" class="txt-input" placeholder="contraseña" type="password"></ion-input>
+                </ion-item>
+            </ion-col>
+            <ion-col offset="1" size="10">
+                <ion-button (click)="login()" expand="full">login</ion-button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>
